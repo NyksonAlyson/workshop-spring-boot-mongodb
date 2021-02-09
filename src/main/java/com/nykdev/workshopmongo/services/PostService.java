@@ -23,7 +23,7 @@ import com.nykdev.workshopmongo.services.exception.ObjectNotFoundException;
 		}
 			
 		public List<Post> findByTitle(String text){
-			return repo.findByTitleContainingIgnoreCase(text);
+			return repo.searchTitle(text);
 			
 		}
 	
